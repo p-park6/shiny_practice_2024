@@ -1,0 +1,1 @@
+*This app is maintained by [Patty Park](https://p-park6.github.io/) and is updated as needed for teaching purposes. The template is provided by [Samantha Csik](https://samanthacsik.github.io/) Please report any issues [here](https://github.com/samanthacsik/EDS430-shiny-app/issues). Source code can be found on [GitHub](https://github.com/samanthacsik/EDS430-shiny-app).*
