@@ -2,9 +2,20 @@
 library(shiny)
 library(palmerpenguins)
 library(tidyverse)
+library(DT)
+library(bslib)
 
 #user interface --------
 ui <- fluidPage(
+  
+  theme = bs_theme(
+    
+    bg = "#a36F6F",
+    fg = "#FDF7f7",
+    primary = "#483132",
+    base_font = font_google("Pacifico")
+    
+  ),
   
   # app title ----
   tags$h1("My app title"),

@@ -36,8 +36,14 @@ body <- dashboardBody(
                    
                    #background info box ----
                    box(width = NULL,
-                       
-                       "BACKGROUND info here"
+                           
+                           title = tagList(icon("water"), strong("Monitoring Fish Creek Watershed")),
+                           includeMarkdown("text/intro.md"),
+                           tags$img(src = "FishCreekWatershedSiteMap_2020.jpg", 
+                                    alt = "A map of Northern Alaska, showing Fish Creek Watershed located within the National Petroleum Reserve.",
+                                    style = "max-width: 100%;"),
+                                    tags$h6(tags$em("Map Source:", tags$a(href = "http://www.fishcreekwatershed.org/", "FCWO")),
+                                            style = "text-align: center;")
                        
                    )#END background box
                    
@@ -52,7 +58,9 @@ body <- dashboardBody(
                      #citation box ----
                      box(width = NULL,
                          
-                         "citation here"
+                         title = tagList(icon("table"),
+                                         strong("Data Source")),
+                         includeMarkdown("text/citation.md")
                          
                      )#END citation box
                      
@@ -64,8 +72,10 @@ body <- dashboardBody(
                      #disclaimer box ----
                      box(width = NULL,
                          
-                         "disclaimer here"
-                         
+                         title = tagList(icon("triangle-exclamation"), 
+                                         strong("Disclaimer")),
+                         includeMarkdown("text/disclaimer.md")
+
                      )#END disclaimer box
                      
                    )#END second fluidRow
